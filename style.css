@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+:root {
+  --bg: #f4f4f9;
+  --text: #333;
+  --header-bg: #1a1a1a;
+  --footer-bg: #e0e0e0;
+  --button-bg: #00b894;
+}
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --header-bg: #222;
+  --footer-bg: #2b2b2b;
+  --button-bg: #26a69a;
+}
+header {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+main h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.4rem;
+}
+ul {
+  list-style: square inside;
+}
+a {
+  color: #00b894;
+  text-decoration: none;
+}
+a.btn, button.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--button-bg);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--footer-bg);
+  font-size: 0.9rem;
+}
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+}
